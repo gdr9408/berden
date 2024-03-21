@@ -1,0 +1,94 @@
+h2.tit {
+  font-size: 3.1rem;
+  line-height: 4.2rem;
+  font-weight: 300;
+  letter-spacing: -0.2rem;
+
+  b {
+    font-weight: 900;
+  }
+
+  @media #{$pc2}{
+    font-size: 5.5rem;
+    line-height: 7.2rem;
+  }
+}
+
+p.txt1 {
+  font-size: 2.1rem;
+  font-style: italic;
+  font-weight: 200;
+  @media #{$pc2}{
+    font-size: 2.6rem;
+  }
+}
+
+p.txt2 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  margin-top: 3rem;
+  letter-spacing: -0.1rem;
+  
+}
+
+.con_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16rem;
+  height: 5.2rem;
+  background: black;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 5.2rem;
+}
+
+.con_btn2 {
+  @extend .con_btn;
+  background-color: #fff;
+  color: #000
+}
+
+
+
+section {
+  padding: 10rem 2rem;
+  position: relative;
+  z-index: 0;
+}
+
+.rel {
+  position: relative;
+  height: 100%;
+
+  @media #{$pc2} {
+    max-width: 120rem;
+    margin: auto;
+  }
+}
+
+.img_wrap {
+  position: relative;
+  margin: auto;
+  margin-top: 8rem;
+
+  @media #{$pc2}{
+    margin: 0;
+    margin-top: 15rem;
+  }
+}
+
+.deco {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.search_wrap {
+  display: none;
+}

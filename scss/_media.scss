@@ -1,0 +1,490 @@
+@media #{$tablet} {
+  .mob_only {
+    display: none;
+  }
+
+  footer .mob_only {
+    display: block;
+  }
+
+  #section4 .img_wrap,
+  #section5 .img_wrap,
+  #section6 .img_wrap {
+    width: 41.6rem;
+    height: 42.2rem;
+  }
+}
+
+;
+
+@media #{$pc1} {
+  header {
+    height: 8rem;
+    padding: 0;
+    transition: 0.3s ease-in-out;
+
+    .rel {
+      align-items: center;
+      padding: 0 2rem;
+
+      .header_left {
+        display: flex;
+        align-items: center;
+
+        .header_tit a {
+          margin-right: 2.7rem;
+          width: 10rem;
+          min-height: 1.6rem;
+        }
+      }
+
+      .header_right {
+        display: flex;
+        align-items: center;
+
+        .h_nav {
+          display: flex;
+
+          li {
+            margin-left: 2rem;
+
+            a {
+              display: block;
+              padding: 1rem;
+              line-height: 2.2rem;
+              font-size: 1.7rem;
+              font-weight: 600;
+              color: #fff;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+
+      .mob_btn {
+        display: none;
+      }
+    }
+  }
+
+  // 헤더 hover
+  header {
+    &:hover {
+      background-color: rgb(255, 255, 255);
+      border-bottom: 0.1rem solid #fff;
+
+      .rel {
+        .header_left {
+          .header_tit a {
+            .header_logo {
+              &.white {
+                opacity: 0;
+              }
+
+              &.black {
+                opacity: 1;
+              }
+            }
+          }
+
+          .site_group {
+            background: rgba(0, 0, 0, 0.4);
+          }
+        }
+
+        .header_right {
+          .h_nav li a {
+            color: #000;
+          }
+
+          .sch_btn {
+            background: url(../img/btn_totalsearch.png) no-repeat center / 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+
+  .scrolling {
+    header {
+      background-color: rgbㅁ(255, 255, 255, 0.6);
+      border-bottom: 0.1rem solid #fff;
+
+      .rel {
+        .header_left {
+          .header_tit a {
+            .header_logo {
+              &.white {
+                opacity: 0;
+              }
+
+              &.black {
+                opacity: 1;
+              }
+            }
+          }
+
+          .site_group {
+            background: rgba(0, 0, 0, 0.4);
+          }
+        }
+
+        .header_right {
+          .h_nav li a {
+            color: #000;
+          }
+
+          .sch_btn {
+            background: url(../img/btn_totalsearch.png) no-repeat center / 1.8rem;
+          }
+        }
+      }
+    }
+  }
+
+
+  .subNav {
+    height: 0;
+    visibility: hidden;
+    //height: 48rem;
+    top: 8rem;
+    right: auto;
+    left: 0;
+    background: $shadow;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+      max-width: 120rem;
+      margin: auto;
+      background: transparent;
+      color: #000;
+      padding-top: 3rem;
+    }
+
+    .site_group {
+      display: none;
+    }
+  }
+
+  .sub_menu {
+    .depth1 {
+      display: flex;
+      flex-wrap: wrap;
+
+      &>li {
+        padding: 1.5rem 0;
+        width: calc(100% / 3 - 2rem);
+
+        .sub-tit {
+          display: block;
+          color: #fff;
+          font-size: 1.6rem;
+          font-weight: 800;
+        }
+
+        span {
+          display: none;
+        }
+
+        //모바일에서만 보이는   
+      }
+    }
+
+
+    .depth2 {
+      display: block;
+      background: transparent;
+
+      li {
+        color: #a4a4a4;
+      }
+    }
+  }
+
+  .banner_wrap {
+    display: block;
+    width: 30rem;
+    margin-right: 2rem;
+
+    .banner {
+      display: flex;
+      padding: 2rem;
+      border-radius: 1.6rem;
+      justify-content: space-between;
+
+      &.b01 {
+        background: #a467dd;
+        margin-bottom: 2rem;
+      }
+
+      &.b02 {
+        background: #7ecaec;
+      }
+
+      .btn {
+        display: inline-block;
+        color: #fff;
+        background: rgba(0, 0, 0, 0.4);
+        border-radius: 3rem;
+        padding: .9rem 1.7rem;
+        font-size: 1.3rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        color: #fff;
+        margin-top: 1rem;
+      }
+    }
+
+  }
+
+  // pc 서브메뉴 열림
+  .pcOpen {
+    header {
+      background-color: rgb(255, 255, 255);
+      border-bottom: 0.1rem solid #fff;
+
+      .rel {
+        .header_left {
+          .header_tit a {
+            .header_logo {
+              &.white {
+                opacity: 0;
+              }
+
+              &.black {
+                opacity: 1;
+              }
+            }
+          }
+
+          .site_group {
+            background: rgba(0, 0, 0, 0.4);
+          }
+        }
+
+        .header_right {
+          .h_nav li a {
+            color: #000;
+          }
+
+          .sch_btn {
+            background: url(../img/btn_totalsearch.png) no-repeat center / 1.8rem;
+          }
+        }
+      }
+    }
+
+    .subNav {
+      height: 48rem;
+      visibility: visible;
+    }
+  }
+
+}
+
+;
+
+
+@media #{$pc2} {
+  header {
+
+    .rel {
+      max-width: 140rem;
+      margin: auto;
+
+      .header_left {
+        .site_group {
+          display: flex;
+        }
+      }
+
+      .header_right {
+        .h_nav {
+          li {
+            margin-left: 2.5rem;
+
+            a {
+              font-size: 1.8rem;
+            }
+          }
+        }
+
+        .sch_btn {
+          display: block;
+          width: 3.6rem;
+          height: 3.6rem;
+          background: url(../img/btn_totalsearch_white.svg) no-repeat center / 1.8rem;
+          text-indent: -9999px;
+          margin-left: 6rem;
+        }
+      }
+    }
+  }
+
+  .banner_wrap {
+    width: 36rem;
+
+    .banner {
+      p {
+        font-size: 1.6rem;
+        line-height: 2.3rem;
+      }
+    }
+  }
+
+  .search_wrap {
+    display: block;
+    position: fixed;
+    top: 8rem;
+    background: $bg-color1;
+    height: 0;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+    overflow: hidden;
+    visibility: hidden;
+
+    .inner {
+      max-width: 120rem;
+      margin: auto;
+      padding: 3rem;
+
+      .dep1 {
+        position: relative;
+        label {
+          display: none;
+        }
+        input {
+          display: block;
+          width: 100%;
+          height: 10rem;
+          outline: none;
+          border: none;
+          border-bottom: 0.1rem solid #fff;
+          padding-right: 8rem;
+          font-size: 2.4rem;
+          background: transparent;
+          color: #fff;
+          &::placeholder {
+            color: #c8c8c8;
+            font-weight: 900;
+          }
+        }
+        button {
+          position: absolute;
+          right: 0;
+          top: calc(50% - 4rem);
+          background: url(../img/btn_totalsearch_white.svg) no-repeat center ;
+          cursor: pointer;
+          border: none;
+          text-indent: -9999px;
+          width: 8rem;
+          height: 8rem;
+        }
+      }
+      .dep2 {
+        margin-top: 3rem;
+        span {
+          color: #efefef;
+          font-size: 1.8rem;
+          font-weight: 900;
+        }
+        a {
+          position: relative;
+          color: rgba(255,255,255,0.5);
+          font-size: 1.8rem;
+          font-weight: 900;
+          padding: 0 1.5rem;
+          & + a:before {
+            position: absolute;
+            top: 0.1rem;
+            left: 0;
+            content: "";
+            width: 0.2rem;
+            height: 1.8rem;
+            background: rgb(0, 0, 0);
+
+
+          }
+        }
+      }
+    }
+  }
+
+
+  // pc 상태에서 서치 버튼 열렸을때
+  .sOpen {
+    header {
+      background-color: rgb(255, 255, 255);
+      border-bottom: 0.1rem solid #fff;
+
+      .rel {
+        .header_left {
+          .header_tit a {
+            .header_logo {
+              &.white {
+                opacity: 0;
+              }
+
+              &.black {
+                opacity: 1;
+              }
+            }
+          }
+
+          .site_group {
+            background: rgba(0, 0, 0, 0.4);
+          }
+        }
+
+        .header_right {
+          .h_nav li a {
+            color: #000;
+          }
+
+          .sch_btn {
+            background: url(../img/btn_totalsearch_close.svg) no-repeat center / 1.8rem;
+          }
+        }
+      }
+    }
+    .search_wrap {
+      height: 24rem;
+      visibility: visible;
+    }
+  }
+
+  #section2 .rel {
+    display: flex;
+    justify-content: space-between;
+  }
+  #section4 {
+    background: url(../img/d4_bg.png) no-repeat right 35%;
+  }
+  #section4 .rel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #section4 .con_btn {
+    left: 0;
+    bottom: -5rem;
+  }
+  #section5 .rel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+  }
+  #section6 .rel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

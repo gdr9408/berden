@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>벗앤-확인용</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .count {
+      display: inline-block;
+      font-size: 20px;
+      padding: 5px 10px;
+      background-color: lightblue;
+      border-radius: 5px;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <p class="txt1">늘 곁에서 한결같이</p>
+  <h2 class="tit"><b>나를 가장 잘 아는</b><br>
+    단 하나의 인증서</h2>
+
+    <a href="#" class="con_btn">더 알아보기</a>
+
+    <span class="count" data-count="245"></span>
+    <span class="count" data-count="88"></span>
+    <span class="count" data-count="2118"></span>
+    <script>
+      const countElements = document.querySelectorAll('.count');
+
+      // 각 Span 요소에 대해 애니메이션을 수행합니다.
+      countElements.forEach(span => {
+        // data-count 속성에서 목표 값(숫자)를 가져옵니다.
+        const targetCount = parseInt(span.getAttribute('data-count'));
+        // 초기 값은 0으로 설정합니다.
+        let currentCount = 0;
+        // 애니메이션을 실행할 간격을 설정합니다.
+        const increment = Math.ceil(targetCount / 100); // 적절한 값을 조정하여 애니메이션 속도를 조절할 수 있습니다.
+
+        // setInterval을 이용하여 애니메이션을 생성합니다.
+        const counter = setInterval(() => {
+          // 현재 카운트가 목표 카운트에 도달하면 애니메이션을 멈춥니다.
+          if (currentCount >= targetCount) {
+            clearInterval(counter);
+            return;
+          }
+          // 현재 카운트를 Span에 표시합니다.
+          span.textContent = currentCount;
+          // 현재 카운트를 증가시킵니다.
+          currentCount += increment;
+          // 현재 카운트가 목표 카운트를 초과하지 않도록 보정합니다.
+          if (currentCount > targetCount) {
+            currentCount = targetCount;
+          }
+        }, 30); // 각 반복 간격의 시간(ms)을 조절하여 애니메이션의 부드러움을 조절할 수 있습니다.
+      });
+    </script>
+</body>
+</html>
